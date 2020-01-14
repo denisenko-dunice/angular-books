@@ -1,0 +1,9 @@
+<mat-toolbar class="nav-bar">
+  <a mat-button [routerLink]="'/'"> Home </a>
+  <a mat-button [routerLink]="'/navigation/table'"> Books </a>
+  <a mat-button [routerLink]="'/navigation/custom'"> Customize </a>
+</mat-toolbar>
+
+<div [@routeAnimations]="prepareRoute(outlet)" >
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
